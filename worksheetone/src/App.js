@@ -17,15 +17,15 @@ class App extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     alert('devcodecamp')
-  };
-}
+    };
+  }
 
   render() { 
     return ( 
       <div className="App">
       <DisplayName />
       <NamesList name = {name}/>
-      <AlertUser onSubmit = {(event) => this.handleSubmit(event)}/>
+      <AlertUser />
      </div>
      );
   }
